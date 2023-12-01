@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown menu</title>
+    <link href="styledrop.css" rel="stylesheet"/>   
+  </head>
+  <body>    
+    <ul>
+            <li>
+        <a>ABOUT ME</a>
+        <ul>
+          <li><a href="franchi100/01_bio.pdf">Bio</a></li>
+          <li><a href="franchi100/02_bikes.pdf">Bikes</a></li>
+          <li><a href="franchi100/Ferrari_Siena_1.mp4">Siena Ferrari show</a></li>
+        </ul>
+      </li>
+      <li>
+        <a>RESUME</a>
+        <ul>
+          <li>
+            <a href="franchi100/03_resume.pdf">Curriculum</a>
+          </li>
+          <li>
+            <a href="franchi100/04_deliverables.pdf">Deliverables</a>
+          </li>
+          <li>
+            <a href="franchi100/05_responsabilities.pdf">Responsabilities</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>PATENTS</a>
+        <ul>
+          <li><a href="franchi100/06_patents.pdf">Overview</a></li>
+          <li>
+            <a href="franchi100/07_support.pdf">Patent 1</a>
+          </li>
+          <li>
+            <a href="franchi100/08_glowplugs.pdf">Patent 2</a>
+          </li>
+          <li>
+            <a href="franchi100/09_guide.pdf"
+              >Patent 3</a
+            >
+          </li>
+          <li>
+            <a href="franchi100/10_retainer.pdf">Patent 4</a>
+          </li>
+        </ul>
+      </li>
+         
+      <li>
+        <a>INFO</a>
+        <ul>
+          <li><a href="franchi100/11_discorso.pdf">Speech</a></li>
+          <li><a href="franchi100/12_allofus.jpg">Family pic</a></li>
+          <li><a href="franchi103 side bar/Best moments.pdf">Best moments</a></li>
+          <li><a href="franchi100/Sao Paulo.mp4">Sao Paulo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a>TRIPS</a>
+        <ul>
+          <li><a href="franchi100/13_Trip.pdf">Crna/Serbia/Greece</a></li>
+          <li><a href="franchi100/14_Trip_Ital_Moz.pdf">Italy Nord </a></li>
+          <li><a href="franchi100/Trip album Rome.pdf">Italy Sud </a></li>
+          <li><a href="franchi100/Trip album Amalfi trip.pdf">Almafi Coast </a></li>
+          <li><a href="franchi100/Trip album Calabria & Sicilia.pdf">Calabria and Sicilia</a></li>
+          </ul>
+          </li>
+      <li>
+        <a>CONTACT</a> an
+        <ul>
+          <li>
+            <a href="mailto:ffranchi1001@gmail.com?Subject= First contact"
+              >Email</a
+            >
+          </li>
+          <li>
+            <a href=> MAP
+              <iframe
+              src="https://www.google.com/maps/place/3209+N+Drake+Ave,+Chicago,+IL+60618/@41.9395289,-87.7186236,17z/data=!3m1!4b1!4m6!3m5!1s0x880fcd530fc569eb:0xfebeb0d571903a75!8m2!3d41.9395249!4d-87.7160487!16s%2Fg%2F11l2p2wqsl?entry=ttu"
+              width="800"
+              height="500"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="50" height="50">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      </nav>
+    <div id="side-menu" class="side-nav">
+      <ul><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Emails</a>       
+        <li><a href="https://www.xfinity.com/overview">Xfinity</a></li>
+        <li><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
+      </ul>
+      <ul><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>      
+      <a href="#">Banks</a>      
+        <li><a href="https://www.chase.com/">Chase</a></li>
+        <li><a href="https://www.huntington.com/Personal">Huntington</a></li>        
+      </ul>
+      <ul><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>      
+        <a href="#">Invest and Savings </a>      
+          <li><a href="https://client.schwab.com/Login/SignOn/CustomerCenterLogin.aspx?LoggedOff=y">Charles Swab</a></li>
+          <li><a href="https://www.treasurydirect.gov/RS/UN-Display.do">Tresaure Direct</a></li>        
+        </ul>
+      <ul><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Credit Cards</a>
+        <li><a href="https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go">BofA</a></li>
+        <li><a href="https://www.citi.com/credit-cards/home">CITI</a></li>
+        <li><a href="https://www.americanexpress.com/en-us/account/login?inav=iNavLnkLog">AMEX</a></li>
+      </ul>
+    </div>
+    <script>
+      function openSlideMenu() {
+        document.getElementById("side-menu").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      function closeSlideMenu() {
+        document.getElementById("side-menu").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+     </body>
+</html>
